@@ -16,7 +16,6 @@ Pick the file that matches your operating system and architecture:
 |---|---|---|
 | macOS | Apple Silicon (M1/M2/M3/M4) | `Go-Runner_<version>_aarch64.dmg` |
 | macOS | Intel | `Go-Runner_<version>_x64.dmg` |
-| macOS | Universal (both) | `Go-Runner_<version>_universal.dmg` |
 | Windows | x86_64 | `Go-Runner_<version>_x64-setup.exe` or `.msi` |
 | Linux | x86_64 (Debian/Ubuntu) | `go-runner_<version>_amd64.deb` |
 | Linux | x86_64 (portable) | `go-runner_<version>_amd64.AppImage` |
@@ -44,7 +43,7 @@ The app auto-detects Go in these locations, so it works whether you launch from 
 
 ### macOS
 
-1. Download the `.dmg` for your chip (Apple Silicon or Intel — pick Universal if unsure).
+1. Download the `.dmg` for your chip — `aarch64.dmg` for Apple Silicon (M1/M2/M3/M4), `x64.dmg` for Intel. *Not sure which?* Click the Apple menu → *About This Mac* and check the **Chip** field.
 2. Open the `.dmg` and drag **Go Runner** to your Applications folder.
 3. **First launch:** because the app is not yet notarized by Apple, macOS may show *"Go Runner cannot be opened because the developer cannot be verified."* To bypass this:
    - **Right-click** the app in Applications → **Open** → **Open** in the dialog. *(Only needed on first launch.)*
